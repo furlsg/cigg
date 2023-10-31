@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>menu</title>
+  <style>
+    nav {
+      background-color:#eee;
+      overflow:hidden;
+      scroll-behavior:smooth;
+    }
+      
+    .container {
+      height:calc(3em + 4px);
+    }
+    
+    section {
+      padding:calc(1em + 2px);
+      width:100vw;
+    }
+    a {
+      border:solid 1px transparent;
+      padding:1em;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <div class="container">
+    <section>
+      <a id="top1" href="#one">One</a>
+      <a id="top2" href="#two">Two</a>
+      <a id="top3" href="#three">Three</a>
+    </section>
+    <section>
+      <a id="one" href="#top1">Back</a>
+      <a href="#oneA">Link 1a</a>
+      <a href="#">Link 1b</a>
+      <a href="#">Link 1c</a>
+    </section>
+    <section>
+      <a id="oneA" href="#one">Back</a>
+      <a href="#">Link 1a i</a>
+      <a href="#">Link 1a ii</a>
+      <a href="#">Link 1a iii</a>
+    </section>
+    <section>
+      <a id="two" href="#top2">Back</a>
+      <a href="#">Link 2a</a>
+      <a href="#">Link 2b</a>
+      <a href="#">Link 2c</a>
+    </section>
+    <section>
+      <a id="three" href="#top3">Back</a>
+      <a href="#">Link 3a</a>
+      <a href="#">Link 3b</a>
+      <a href="#">Link 3c</a>
+    </section>
+    </div>
+  </nav>
+  
+  <p>This is a very simple design pattern for presenting a hierachical menu in a confined space.</p>
+  <p> It's HTML and CSS only solution, no JavaScript.</p>
+  <p>It uses standard anchor tags plus smooth-scroll, no fancy animation.</p>
+  <p>It works with keyboard only and shifts focus appropriately.</p>
+</body>
+</html>

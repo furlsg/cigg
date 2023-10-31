@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+}
+
+.menu {
+  background-color: #f3f3f3;
+  display: flex;
+  align-items: baseline;
+  padding: 0.5rem;
+  gap: 3rem;
+}
+
+.menu .item {
+  position: relative;
+}
+
+.menu .link {
+  background: transparent;
+  border: none;
+  text-decoration: none;
+  color: #777;
+  cursor: pointer;
+  padding: 0;
+  font-size: 2rem;
+}
+
+.menu .link:hover {
+  color: black;
+}
+
+.menu .sublink {
+  position: absolute;
+  left: 0;
+  top: calc(100% + 0.5rem);
+  background-color: white;
+  padding: 0.7rem;
+  border-radius: .5rem;
+  box-shadow: 3px 5px 15px rgba(0, 0, 0, 0.35);
+  opacity: 0;
+}
+
+.menu .link:focus + .sublink {
+  opacity: 1;
+}
