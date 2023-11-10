@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cookie-status</title>
+</head>
+<link rel="stylesheet" href="button01.css">
+<body>
+  <div class="wrap">
+    <span class="minus">-</span>
+    <span class="num">01</span>
+    <span class="plus">+</span>
+  </div>
+  
+  <script>
+    const plus = document.querySelector(".plus"),
+      minus = document.querySelector(".minus"),
+      num = document.querySelector(".num");
+
+    let n = 1;
+
+    plus.addEventListener('click', () => {
+      n++;
+      n = (n<10) ? "0" + n : n;
+      num.innerText = n;
+    });
+
+    minus.addEventListener('click', () => {
+      
+      n = (n>1) ? --n : 1;
+      n = (n<10) ? "0" + n : n;
+      num.innerText = n;
+    });
+    
+  </script>
+</body>
+</html>
